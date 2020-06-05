@@ -23,6 +23,9 @@ try:
     x = x_element.text
     y = calc(x)
 
+    input_text = browser.find_element_by_id("answer")
+    input_text.send_keys(y)
+
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(10)
