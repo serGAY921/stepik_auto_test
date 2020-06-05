@@ -12,6 +12,9 @@ try:
 
     time.sleep(1)
 
+    new_window = browser.window_handles[1]
+    browser.switch_to.window(new_window)
+
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(10)
