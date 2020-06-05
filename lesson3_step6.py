@@ -26,6 +26,9 @@ try:
     input_text = browser.find_element_by_id("answer")
     input_text.send_keys(y)
 
+    button = browser.find_element_by_css_selector("button.btn")
+    button.click()
+
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(10)
